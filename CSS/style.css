@@ -1,0 +1,80 @@
+.tete:hover{
+  transform: rotate(10deg) scale(1.1);
+  -webkit-transform: rotate(10deg) scale(1.1);
+}
+
+#footer a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+
+body{
+	background-image: url("../image/grid.jpg");
+}
+
+#footer{
+	color: #aaaaaa;
+	background-color: black;
+	padding-top: 10px;
+}
+
+#footer a{
+	color: #dddddd;
+}
+
+.social {
+	font-size: 24px;
+}
+
+.spacer {
+height: 30px;
+}
+
+#milieu {
+	background-image: url("../image/background/background.jpg");
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 150px;
+	color:white;
+	text-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2{
+	font-size: 28px;
+}
+
+.feature p{
+font-weight: 300;
+letter-spacing: 1px;
+margin-top: 10px;
+}
+
+.navbar-perso{
+	background-color: rgba(0,0,0,0.7);
+}
+.navbar-perso .navbar-brand,
+.navbar-perso .navbar-nav > li > a {
+  color: #eeeeee;
+  line-height: 35px;
+}
+
+.navbar-perso .navbar-nav > li > a:hover,
+.navbar-perso .navbar-nav > li > a:active,
+.navbar-perso .navbar-nav > li > a:focus,
+.navbar-perso .navbar-nav > .open > a,
+.navbar-perso .navbar-nav > .open > a:hover,
+.navbar-perso .navbar-nav > .open > a:focus {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-perso .navbar-brand:hover,
+.navbar-perso .navbar-brand:active,
+.navbar-perso .navbar-brand:focus {
+  color: white;
+}
