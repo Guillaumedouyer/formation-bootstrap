@@ -84,3 +84,7 @@ margin-top: 10px;
 .navbar-perso .navbar-brand:focus {
   color: white;
 }
+
+#email {
+	padding-bottom: 30px;
+}
