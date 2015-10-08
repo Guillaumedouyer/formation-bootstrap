@@ -31,13 +31,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Ice Me</a>
+      <a class="navbar-brand" href="index.html">Ice Me</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="contact.html">Contactez nous</a></li>
+        <li><a href="index.html">Une glace maintenant !</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suivez-nous <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -51,50 +51,49 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
- <div id="milieu" class="text-center">
-          <h1>Ice ME</h1>
-          <h2>Dégustez une glace</h2>
-        <p>
-        <button type="button" class="btn btn-primary">Je commande</button>
-        </p>
-</div>
 
 <div class="spacer"></div>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-sm-6 col-md-3 feature">
-          <img src="image/29568e7.jpg" alt="ma tête" width="80" class= "img-circle tete">
-          <p>Choisissez jusque 3 parfums parmi notre catalogue de <span class="label label-primary">1000 glaces maison.</span></p>
-        </div>
-        <div class="col-sm-6 col-md-3 feature">
-          <img src="image/icon_29388/icon_29388.png" alt="Géolocalisation" width="80">
-          <p>L'application vous <strong>géolocalise</strong> automatiquement et vous indique le temps d'attente estimé</p>
-        </div>
-       
-        <div class="col-sm-6 col-md-3 feature">
-          <img src="image/icon_24755/icon_24755.png" alt="Camion livraison" width="80">
-          <p>Un de nos supers livreurs fonce pour vous apporter votre glace, qui sera <strong>préparée juste à temps.</strong></p>
-        </div>
-        <div class="col-sm-6 col-md-3 feature"> 
-          <img src="image/icon_17805/icon_17805.png" alt="paiement" width="80">
-          <p>Pas de monnaie ? Pas un problème, le paiement est <strong>automatiquement</strong> débité sur votre carte bancaire.</p>
-        </div>
-      </div>
+<div class="verticalespacer"></div>
+    
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+    <p>Contact</p>
+    <p>58 Avenue de Flandres</p>
+    <p>59290 Wasquehal</p>
     </div>
-<div class="spacer"></div>
+    <div class="col-sm-6">
+          <div id="map" style="width: 100%; height: 400px;"></div>
 
-<div id="email">
-  <div class="row text-center">
-    <div class="col-sm-12">
-      <form class="form-inline" role="form" action="YOUR MAILCHIMP LIST URL" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-      <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="email address" required>
-      <input type="submit" value="Suivez-nous" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
-      </form>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+      <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(50.664206, 3.124877);
+
+        var myOptions = {
+            zoom: 14,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: []
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: "You are here!"
+        });
+      </script>
+
+    <div class="verticalespacer"></div>
+
+
     </div>
   </div>
+
 </div>
 
-    
+
 <div id="footer">
   <div class="container">
     <div class="row">
